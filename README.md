@@ -1,8 +1,5 @@
 # Camera Mocap
 
-<h3 align="left">Hey there</h3>
-<p align="left">
-</p>
 
 <h3 align="center">Description</h3>
 
