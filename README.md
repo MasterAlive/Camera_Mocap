@@ -1,4 +1,4 @@
-# Camera Mocap
+# Camera Mocap tool for Unity
 
 
 <h3 align="center">Description</h3>
