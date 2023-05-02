@@ -8,9 +8,9 @@ This is a camera motion capture tool for Unity. All you need is a smartphone wit
 
 Here's how to get started:
 
-- Download the script.
-- Add it to your Unity project.
- -Attach the "Camera_Mocap" script to your camera in HireKey.
+- Copy the "Camera_Mocap" script.
+- add a new script in unity and name it "Camera_Mocap".
+ -Attach this script to your camera in HireKey.
 - Launch "Unity Remote 5" on your phone.
 - Click play.
 - When Unity is connected to your phone, touch the screen and rotate your phone.
