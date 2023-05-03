@@ -23,6 +23,22 @@ Here's how to get started:
 
 Camera motion capture is a feature that a lot of indie game devs overlook, but it can really enhance a game's appeal. For example, check out "Inside", a video game by Playdead studio, to see how good camera movement can create a realistic feeling. You can achieve this by using this script and capturing your phone's movement.
 
-like a real camera, but in your game.
+
+
+https://user-images.githubusercontent.com/101261932/235971753-b9b48bd5-f2f1-4f67-927a-2af51f04b1f9.mp4
+
+
 
 It can also be used for camera shake animation, like when something explodes in the game and you need a realistic animation for shaking the camera.
+
+
+Furthermore, this project is not limited for only use on camera. you can use it for any object!! ( this Actually depends on your creativity. Watch the video below )
+
+
+
+
+
+https://user-images.githubusercontent.com/101261932/235971781-5a8d774e-cda1-4adb-be62-cf4be8cca789.mp4
+
+
+
