@@ -20,6 +20,8 @@ public class Camera_Mocap : MonoBehaviour
     [Range(0.5f, 10f)]
     public float gyro_sensitivity = 3f;
 
+    Vector3 final_rotation;
+
     public bool Camera_x_Rotation = true;       // Enable Rotate the Camera From x Axis. Default : true
     public bool Camera_y_Rotation = true;       // Enable Rotate the Camera From y Axis. Default : true
     public bool Camera_z_Rotation = false;      // Enable Rotate the Camera From z Axis. Default : false
@@ -32,6 +34,8 @@ public class Camera_Mocap : MonoBehaviour
     void Start()
     {
         Input.gyro.enabled = true;
+
+        final_rotation = gameObject.transform.eulerAngles;
 
         for (int i = 0; i < 50; i++)
        {
@@ -74,7 +78,10 @@ public class Camera_Mocap : MonoBehaviour
                 locker.x = 0;
             }
 
-            gameObject.transform.Rotate(locker);
+            final_rotation.x += locker.x;
+            final_rotation.y += locker.y;
+            final_rotation.z += locker.z;
+            transform.eulerAngles = final_rotation;
         }
         
 
