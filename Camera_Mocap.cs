@@ -58,7 +58,7 @@ public class Camera_Mocap : MonoBehaviour
     {
         if (Input.touchCount > 0 || Rotate_when_touch == false)
         {          
-            locker = (-Input.gyro.rotationRate) / gyro_sensitivity;
+            locker = (-Input.gyro.rotationRateUnbiased) / gyro_sensitivity;
             if (Camera_z_Rotation == false)
             {
                 locker.z = 0;
@@ -74,7 +74,7 @@ public class Camera_Mocap : MonoBehaviour
                 locker.x = 0;
             }
 
-            gameObject.transform.eulerAngles += locker;
+            gameObject.transform.Rotate(locker);
         }
         
 
