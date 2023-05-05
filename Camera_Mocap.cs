@@ -1,4 +1,5 @@
 
+#if (UNITY_EDITOR)
 using UnityEditor;
 using UnityEngine;
 using System.IO;
@@ -117,6 +118,7 @@ public class Camera_Mocap : MonoBehaviour
         if (m_Recorder.isRecording)
         {            
             m_Recorder.SaveToClip(clip);
+            Debug.Log("saved :" + clip.name);
         }
     }
 
@@ -178,4 +180,5 @@ public class InspectorButtonPropertyDrawer : PropertyDrawer
         }
     }
 }
+#endif
 #endif
